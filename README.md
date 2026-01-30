@@ -8,5 +8,5 @@ Each project lives under its own namespace in `Formula/`, e.g. `Formula/rtluckie
 
 ```
 brew tap rtluckie/tap
-brew install gvizid
+brew install vizid
 ```

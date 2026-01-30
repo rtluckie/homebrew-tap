@@ -5,21 +5,21 @@
 class Vizid < Formula
   desc "VIZID: visual, sortable timestamps + IDs"
   homepage "https://github.com/rtluckie/gVIZID"
-  version "0.2.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rtluckie/vizid/releases/download/0.2.0/vizid_0.2.0_darwin_amd64.tar.gz"
-      sha256 "7f530faf6de9c464b17a43d546cf54c73b7c9c1e5c89bc72ab11dbb494b2385e"
+      url "https://github.com/rtluckie/vizid/releases/download/0.1.1/vizid_0.1.1_darwin_amd64.tar.gz"
+      sha256 "3c15bbf1c47f1f3eeb1214536a648af1c56358c956d0d75641e329ed3d78a335"
 
       def install
         bin.install "vizid"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rtluckie/vizid/releases/download/0.2.0/vizid_0.2.0_darwin_arm64.tar.gz"
-      sha256 "d8ed8a2265a711fa03677ad05ab6456d00f400e1c50a3930554dcdfe62618ce1"
+      url "https://github.com/rtluckie/vizid/releases/download/0.1.1/vizid_0.1.1_darwin_arm64.tar.gz"
+      sha256 "efe309b7fbffa49629917d9d864cab0142bfd39c80331c2cfe2744785ee2ae5f"
 
       def install
         bin.install "vizid"
@@ -29,15 +29,15 @@ class Vizid < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rtluckie/vizid/releases/download/0.2.0/vizid_0.2.0_linux_amd64.tar.gz"
-      sha256 "90ddf2a57e5db7cd5ef71f578d528bb5432ba65474adc592a4973745ddef046c"
+      url "https://github.com/rtluckie/vizid/releases/download/0.1.1/vizid_0.1.1_linux_amd64.tar.gz"
+      sha256 "869fa979486d04bc831abbc2b9b360c5ae6b9deb9af5f472ead09c9146b3c55e"
       def install
         bin.install "vizid"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rtluckie/vizid/releases/download/0.2.0/vizid_0.2.0_linux_arm64.tar.gz"
-      sha256 "deb39e6b494e9f60570937d2cf2daf629fcc79cfd91f8cef58a4c2d89a2bf768"
+      url "https://github.com/rtluckie/vizid/releases/download/0.1.1/vizid_0.1.1_linux_arm64.tar.gz"
+      sha256 "9705942bdf68540f0a7a82aa8566e10755e0ed5aec682aabb45634c9f240e272"
       def install
         bin.install "vizid"
       end
